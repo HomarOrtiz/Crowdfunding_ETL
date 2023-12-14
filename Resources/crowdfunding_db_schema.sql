@@ -1,3 +1,5 @@
+create database crowdfunding_db;
+
 CREATE TABLE "category" (
     "category_id" varchar   NOT NULL,
     "category" varchar   NOT NULL,
@@ -49,3 +51,10 @@ REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_sub_category_id" FOREIGN KEY("sub_category_id")
 REFERENCES "sub_category" ("sub_category_id");
 
+select * from category;
+
+select * from sub_category;
+
+select * from contacts;
+
+select * from campaign;
